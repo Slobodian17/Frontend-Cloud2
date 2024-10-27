@@ -1,0 +1,106 @@
+@import "../reset";
+@import "../colors";
+@import "./form";
+
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $dark-color;
+}
+
+$form-bg-color: #a8acad;
+
+.access{
+  button{
+    background-color: $event-border-color;
+    width: 100%;
+    position: relative;
+    display: initial;
+    font-family: Arial, sans-serif;
+    margin-bottom: 20px;
+    &:hover {
+      background-color: lighten($event-border-color, 10%);
+    }
+  }
+}
+
+.form-textarea {
+  resize: none;
+  display: block;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: $body-text-color;
+  background-color: $form-bg-color;
+  border: 1px solid $border-color;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+  &:focus {
+    border-color: $accent-color;
+    box-shadow: 0 0 0 0.2rem rgba($accent-color, 0.25);
+    outline: none;
+  }
+
+  &::placeholder {
+    color: $body-text-color;
+    opacity: 0.5;
+  }
+}
+.select-wrapper {
+  position: relative;
+  display: inline-block;
+  font-family: Arial, sans-serif;
+  margin-bottom: 20px;
+}
+
+.select {
+  //width: 100%;
+  appearance: none;
+  background-color: $light-color;
+  border: 2px solid $border-color;
+  border-radius: 4px;
+  color: $dark-color;
+  cursor: pointer;
+  display: block;
+  font-size: 16px;
+  padding: 10px 40px 10px 20px;
+  width: 460px;
+  outline: none;
+
+  option {
+    font-size: 16px;
+    background-color: $light-color;
+    &:hover {
+      background-color: darken($light-color, 20%);
+    }
+    &:focus {
+      background-color: darken($light-color, 20%);
+    }
+  }
+
+  &::-ms-expand {
+    display: none;
+  }
+
+  &:after {
+    content: "\25BC";
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: $navbar-text-color;
+  }
+
+  &:focus {
+    border-color: $primary-color;
+  }
+
+  &:focus:after {
+    color: $primary-color;
+  }
+}

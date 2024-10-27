@@ -1,0 +1,11 @@
+@import "../reset";
+@import "../colors";
+@import "./form";
+
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $dark-color;
+}

@@ -1,0 +1,87 @@
+@import "../colors";
+// Mixins for border radius, box-shadow, and text styles
+@mixin border-radius($radius) {
+  border-radius: $radius;
+}
+
+@mixin box-shadow($shadow) {
+  box-shadow: $shadow;
+}
+
+@mixin text-style($color, $size) {
+  color: $color;
+  font-size: $size;
+}
+
+.login-form {
+  h2 {
+    color: $accent-color;
+    text-align: center;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  p{
+    color: $dark-color;
+    font-size: smaller;
+  }
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: $light-color;
+  @include border-radius(5px);
+  @include box-shadow(0 0 10px rgba(0, 0, 0, 0.3));
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-label {
+  @include text-style($dark-color, 16px);
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid $border-color;
+  @include border-radius(3px);
+  @include text-style($dark-color, 16px);
+
+  &:focus {
+    border-color: $accent-color;
+  }
+}
+
+.form-submit {
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: $dark-color;
+  border: none;
+  @include border-radius(3px);
+  @include text-style($button-text-color, 16px);
+  cursor: pointer;
+
+  &:hover {
+    background-color: darken($dark-color, 10%);
+  }
+}
+
+.form-cancel {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: $primary-color;
+  border: none;
+  @include border-radius(3px);
+  @include text-style($button-text-color, 16px);
+  cursor: pointer;
+
+  &:hover {
+    background-color: darken($primary-color, 10%);
+  }
+}
