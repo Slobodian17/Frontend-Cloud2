@@ -21,7 +21,7 @@ describe("getCalendars", () => {
 
         const result = await getCalendars();
 
-        expect(fetch).toHaveBeenCalledWith("http://127.0.0.1:5000/calendars", {
+        expect(fetch).toHaveBeenCalledWith("http://13.60.196.234:5000/calendars", {
             headers: {
                 Authorization: localStorage.getItem("Authorization"),
                 accept: "application/json",
