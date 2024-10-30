@@ -1,6 +1,6 @@
 export const giveAccess = async (userId, calendarId) => {
     try {
-        const response = await fetch(`http://127.0.0.1:5000/calendar/get_access/${+userId}/${+calendarId}`, {
+        const response = await fetch(`http://13.60.196.234:5000/calendar/get_access/${+userId}/${+calendarId}`, {
             method: "POST",
             headers: {
                 Authorization: localStorage.getItem("Authorization"),
