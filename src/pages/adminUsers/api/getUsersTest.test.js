@@ -20,7 +20,7 @@ describe("getUsers", () => {
 
         const result = await getUsers();
 
-        expect(fetch).toHaveBeenCalledWith("http://127.0.0.1:5000/users", {
+        expect(fetch).toHaveBeenCalledWith("http://13.51.196.110:5000/users", {
             headers: {
                 Authorization: localStorage.getItem("Authorization"),
                 accept: "application/json",
