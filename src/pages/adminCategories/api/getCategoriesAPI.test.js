@@ -20,7 +20,7 @@ describe("getCategories", () => {
 
         const result = await getCategories();
 
-        expect(fetch).toHaveBeenCalledWith("http://127.0.0.1:5000/categories", {
+        expect(fetch).toHaveBeenCalledWith("http://13.60.196.234:5000/categories", {
             headers: {
                 Authorization: localStorage.getItem("Authorization"),
                 accept: "application/json",
