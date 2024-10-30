@@ -13,7 +13,7 @@ describe('deleteCalendar', () => {
 
         await deleteCalendar(id);
 
-        expect(fetchMock).toHaveBeenCalledWith(`http://13.60.196.234:5000/calendar/${id}`, {
+        expect(fetchMock).toHaveBeenCalledWith(`http://13.51.196.110:5000/calendar/${id}`, {
             method: 'DELETE',
             headers: {
                 Authorization: 'fakeToken',
