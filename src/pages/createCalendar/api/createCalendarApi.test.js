@@ -31,7 +31,7 @@ describe('createCalendar', () => {
 
         await createCalendar(calendar);
 
-        expect(fetch).toHaveBeenCalledWith('http://127.0.0.1:5000/calendar', {
+        expect(fetch).toHaveBeenCalledWith('http://13.51.196.110:5000/calendar', {
             method: 'POST',
             body: JSON.stringify(calendar),
             headers: {
