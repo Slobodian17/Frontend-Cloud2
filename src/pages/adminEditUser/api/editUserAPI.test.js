@@ -46,7 +46,7 @@ describe('updateUser', () => {
 
         // Assert that the fetch function was called with the expected arguments
         expect(global.fetch).toHaveBeenCalledWith(
-            `http://127.0.0.1:5000/user/${userId}`,
+            `http://13.51.196.110:5000/user/${userId}`,
             {
                 method: 'PUT',
                 body: JSON.stringify(user),
