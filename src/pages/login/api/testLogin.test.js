@@ -20,7 +20,7 @@ describe('login', () => {
         const result = await login(encodedCredentials);
 
         expect(fetch).toHaveBeenCalledTimes(1);
-        expect(fetch).toHaveBeenCalledWith('http://127.0.0.1:5000/user_login', {
+        expect(fetch).toHaveBeenCalledWith('http://13.51.196.110:5000/user_login', {
             headers: {
                 'Access-Control-Allow-Origin': '*',
                 'Content-Type': 'application/json',
@@ -40,7 +40,7 @@ describe('login', () => {
         await expect(login(encodedCredentials)).rejects.toThrow(errorMessage);
 
         expect(fetch).toHaveBeenCalledTimes(1);
-        expect(fetch).toHaveBeenCalledWith('http://127.0.0.1:5000/user_login', {
+        expect(fetch).toHaveBeenCalledWith('http://13.51.196.110:5000/user_login', {
             headers: {
                 'Access-Control-Allow-Origin': '*',
                 'Content-Type': 'application/json',
