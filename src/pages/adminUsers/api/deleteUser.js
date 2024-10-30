@@ -1,6 +1,6 @@
 export const deleteUser = async (id) => {
     try {
-        const response = await fetch(`http://127.0.0.1:5000/user/${id}`, {
+        const response = await fetch(`http://13.60.196.234:5000/user/${id}`, {
             method: 'DELETE',
             headers: {
                 Authorization: localStorage.getItem("Authorization"),
