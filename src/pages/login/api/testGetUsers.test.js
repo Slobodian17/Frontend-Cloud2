@@ -19,7 +19,7 @@ describe('getUsers', () => {
         const result = await getUsers();
 
         expect(fetch).toHaveBeenCalledTimes(1);
-        expect(fetch).toHaveBeenCalledWith('http://127.0.0.1:5000/users');
+        expect(fetch).toHaveBeenCalledWith('http://13.51.196.110:5000/users');
 
         expect(result).toEqual(mockUsers);
     });
@@ -34,7 +34,7 @@ describe('getUsers', () => {
         await getUsers();
 
         expect(fetch).toHaveBeenCalledTimes(1);
-        expect(fetch).toHaveBeenCalledWith('http://127.0.0.1:5000/users');
+        expect(fetch).toHaveBeenCalledWith('http://13.51.196.110:5000/users');
 
         expect(console.log).toHaveBeenCalledTimes(1);
         expect(console.log).toHaveBeenCalledWith(expect.any(Error)); // Expect an error object
