@@ -32,7 +32,7 @@ describe('createEvent', () => {
         const response = await createEvent(event, id);
 
         expect(fetch).toHaveBeenCalledTimes(1);
-        expect(fetch).toHaveBeenCalledWith(`http://127.0.0.1:5000/event/${id}`, {
+        expect(fetch).toHaveBeenCalledWith(`http://13.51.196.110:5000/event/${id}`, {
             method: 'POST',
             body: JSON.stringify(event),
             headers: {
@@ -63,7 +63,7 @@ describe('createEvent', () => {
         const response = await createEvent(event, id);
 
         expect(fetch).toHaveBeenCalledTimes(1);
-        expect(fetch).toHaveBeenCalledWith(`http://127.0.0.1:5000/event/${id}`, {
+        expect(fetch).toHaveBeenCalledWith(`http://13.51.196.110:5000/event/${id}`, {
             method: 'POST',
             body: JSON.stringify(event),
             headers: {
