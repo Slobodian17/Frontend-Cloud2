@@ -21,7 +21,7 @@ describe('deleteAccess', () => {
 
         // Verify that fetch was called with the correct URL, method, and headers
         expect(fetch).toHaveBeenCalledWith(
-            `http://13.60.196.234:5000/calendar/get_access/${userId}/${calendarId}`,
+            `http://13.51.196.110:5000/calendar/get_access/${userId}/${calendarId}`,
             {
                 method: 'DELETE',
                 headers: {
