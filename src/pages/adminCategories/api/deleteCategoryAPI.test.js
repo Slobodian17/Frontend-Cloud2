@@ -13,7 +13,7 @@ describe('deleteCategory', () => {
 
         await deleteCategory(id);
 
-        expect(fetchMock).toHaveBeenCalledWith(`http://13.60.196.234:5000/category/${id}`, {
+        expect(fetchMock).toHaveBeenCalledWith(`http://13.51.196.110:5000/category/${id}`, {
             method: 'DELETE',
             headers: {
                 Authorization: 'fakeToken',
