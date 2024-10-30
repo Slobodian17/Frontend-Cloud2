@@ -17,7 +17,7 @@ describe('getAccesses', () => {
         await getAccesses();
 
         // Verify that fetch was called with the correct URL and headers
-        expect(fetch).toHaveBeenCalledWith('http://127.0.0.1:5000/access', {
+        expect(fetch).toHaveBeenCalledWith('http://13.60.196.234:5000/access', {
             headers: {
                 Authorization: mockToken,
                 accept: 'application/json',
