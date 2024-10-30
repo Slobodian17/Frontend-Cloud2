@@ -24,7 +24,7 @@ describe('createCategory', () => {
         const result = await createCategory(category);
 
         expect(fetchMock).toHaveBeenCalledTimes(1);
-        expect(fetchMock).toHaveBeenCalledWith('http://127.0.0.1:5000/category', {
+        expect(fetchMock).toHaveBeenCalledWith('http://13.51.196.110:5000/category', {
             method: 'POST',
             body: JSON.stringify(category),
             headers: {
@@ -45,7 +45,7 @@ describe('createCategory', () => {
         const result = await createCategory(category);
 
         expect(fetchMock).toHaveBeenCalledTimes(1);
-        expect(fetchMock).toHaveBeenCalledWith('http://127.0.0.1:5000/category', {
+        expect(fetchMock).toHaveBeenCalledWith('http://13.51.196.110:5000/category', {
             method: 'POST',
             body: JSON.stringify(category),
             headers: {
