@@ -16,7 +16,7 @@ describe('updateEvent', () => {
         const result = await updateEvent(updatedEvent, eventId);
 
         expect(fetch).toHaveBeenCalledTimes(1);
-        expect(fetch).toHaveBeenCalledWith(`http://127.0.0.1:5000/event/${eventId}`, {
+        expect(fetch).toHaveBeenCalledWith(`http://13.51.196.110:5000/event/${eventId}`, {
             method: 'PUT',
             body: JSON.stringify(updatedEvent),
             headers: {
@@ -42,7 +42,7 @@ describe('updateEvent', () => {
         const result = await updateEvent(updatedEvent, eventId);
 
         expect(fetch).toHaveBeenCalledTimes(1);
-        expect(fetch).toHaveBeenCalledWith(`http://127.0.0.1:5000/event/${eventId}`, {
+        expect(fetch).toHaveBeenCalledWith(`http://13.51.196.110:5000/event/${eventId}`, {
             method: 'PUT',
             body: JSON.stringify(updatedEvent),
             headers: {
