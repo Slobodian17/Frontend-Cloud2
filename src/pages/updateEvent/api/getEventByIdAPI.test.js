@@ -17,7 +17,7 @@ describe('getEventById', () => {
         const result = await getEventById(eventId);
 
         expect(fetch).toHaveBeenCalledTimes(1);
-        expect(fetch).toHaveBeenCalledWith(`http://127.0.0.1:5000/event/${eventId}`, {
+        expect(fetch).toHaveBeenCalledWith(`http://13.51.196.110:5000/event/${eventId}`, {
             method: 'GET',
             headers: {
                 Authorization: localStorage.getItem('Authorization'),
