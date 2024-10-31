@@ -1,6 +1,6 @@
 export const getCalendarById = async (id) => {
     try {
-        const response = await fetch(`http://127.0.0.1:5000/calendar/${id}`, {
+        const response = await fetch(`http://13.51.196.110:5000/calendar/${id}`, {
             method: "GET",
             headers: {
                 Authorization: localStorage.getItem("Authorization"),
