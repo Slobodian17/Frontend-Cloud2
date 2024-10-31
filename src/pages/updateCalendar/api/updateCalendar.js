@@ -1,6 +1,6 @@
 export const updateCalendar = async (calendar, id) => {
     try {
-        const responce = await fetch(`http://127.0.0.1:5000/calendar/${id}`, {
+        const responce = await fetch(`http://13.51.196.110:5000/calendar/${id}`, {
             method: "PUT",
             body: JSON.stringify(calendar),
             headers: {
