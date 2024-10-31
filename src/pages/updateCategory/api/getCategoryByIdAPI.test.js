@@ -17,7 +17,7 @@ describe('getCategoryById', () => {
         const result = await getCategoryById(categoryId);
 
         expect(fetch).toHaveBeenCalledTimes(1);
-        expect(fetch).toHaveBeenCalledWith(`http://127.0.0.1:5000/category/${categoryId}`, {
+        expect(fetch).toHaveBeenCalledWith(`http://13.51.196.110:5000/category/${categoryId}`, {
             method: 'GET',
             headers: {
                 Authorization: localStorage.getItem('Authorization'),
@@ -38,7 +38,7 @@ describe('getCategoryById', () => {
         const result = await getCategoryById(categoryId);
 
         expect(fetch).toHaveBeenCalledTimes(1);
-        expect(fetch).toHaveBeenCalledWith(`http://127.0.0.1:5000/category/${categoryId}`, {
+        expect(fetch).toHaveBeenCalledWith(`http://13.51.196.110:5000/category/${categoryId}`, {
             method: 'GET',
             headers: {
                 Authorization: localStorage.getItem('Authorization'),
