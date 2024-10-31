@@ -13,7 +13,7 @@ describe('register', () => {
 
     it('should send a POST request to the correct URL with the user data', async () => {
         const user = { name: 'John Doe', email: 'johndoe@example.com', password: 'password' };
-        const expectedUrl = 'http://127.0.0.1:5000/user/register';
+        const expectedUrl = 'http://13.51.196.110:5000/user/register';
         const expectedOptions = {
             method: 'POST',
             body: JSON.stringify(user),
