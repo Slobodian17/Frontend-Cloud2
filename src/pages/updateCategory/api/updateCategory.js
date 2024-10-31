@@ -1,6 +1,6 @@
 export const updateCategory = async (category, id) => {
     try {
-        const response = await fetch(`http://127.0.0.1:5000/category/${id}`, {
+        const response = await fetch(`http://13.51.196.110:5000/category/${id}`, {
             method: "PUT",
             body: JSON.stringify(category),
             headers: {
